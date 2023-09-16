@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niyati's To-do List</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mode">
+      <h1>TODO</h1>
+
+      <img
+        id="mode-change"
+        onclick="changeMode()"
+        src="/icon-sun.png"
+        alt="icon-sun"
+      />
+      <img
+        id="mode-change2"
+        class="moon"
+        onclick="changeMode()"
+        src="/icon-moon.png"
+        alt="icon-sun"
+      />
+    </div>
+    <section>
+      <div class="ii">
+        <input
+          class="blacklist"
+          id="input-v"
+          type="text"
+          placeholder="Write your task here..."
+        />
+        <button id="add-item" class="blacklist">+</button>
+      </div>
+      <ul id="todo-list">
+        <!-- <li id="item1">list item 1 <span>&#215</span></li>
+        <li id="item2">list item 2 <span>&#215</span></li> -->
+      </ul>
+    </section>
+    <!-- 
+    <button>All tasks</button>
+    <button id="completed">Completed</button>
+    <button>Incompleted</button> -->
+    <!-- <img src="/icons8-cross-24.png" alt="" /> -->
+
+    <script src="/index.js"></script>
+  </body>
+</html>
